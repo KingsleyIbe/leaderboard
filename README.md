@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 # LEADERBOARD-LIST-APPLICATION.
@@ -81,6 +80,3 @@ Give a ⭐️ if you like this project!
 ## 📝 License
 
 This project is [MIT](./MIT.md) licensed.
-=======
-### The leaderboard website displays scores submitted by different players. It also allows you to submit your score. All data is preserved, thanks to the [external Leaderboard API service.](https://www.notion.so/Leaderboard-API-service-24c0c3c116974ac49488d4eb0267ade3)  The application was built using Javascript, Sass, Webpack while adopting the Gitflow workflow method.
->>>>>>> 8edd331df527fd742ad75a5f455a5fe40346444c

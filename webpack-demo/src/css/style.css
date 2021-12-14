@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Patrick+Hand+SC);
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Poppins:wght@200;300&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -30,36 +31,43 @@ li {
   border-radius: var(--doodly-br);
   padding: 10px;
 }
+
 .container--flex {
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
+
 .container .inner-container {
   display: flex;
   flex-direction: row;
   gap: 10rem;
 }
+
 .container .display-scores {
   border: var(--b-main);
   border-radius: var(--doodly-br);
   padding: 10px;
   width: 100%;
 }
+
 .container .recent-scores {
   display: flex;
   flex-direction: row;
   gap: 2rem;
 }
+
 .container .form {
   display: flex;
   flex-direction: column;
 }
+
 .container .form label,
 .container .form input {
   padding: 5px;
   margin-bottom: 10px;
 }
+
 .container .form button {
   width: 40%;
   text-align: center;
