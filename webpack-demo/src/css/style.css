@@ -1,0 +1,74 @@
+@import url(https://fonts.googleapis.com/css?family=Patrick+Hand+SC);
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Poppins:wght@200;300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Patrick Hand SC", cursive;
+}
+
+:root {
+  --color-primary: rgb(177, 177, 177);
+  --color-secondary: rgba(177, 177, 177, 0.3);
+  --doodly-br: 255px 15px 225px 15px/15px 225px 15px 255px;
+  --b-main: 5px solid #000;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  width: 50%;
+  max-width: 1000px;
+  margin: 0 auto;
+  border: var(--b-main);
+  border-radius: var(--doodly-br);
+  padding: 10px;
+}
+
+.container--flex {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.container .inner-container {
+  display: flex;
+  flex-direction: row;
+  gap: 10rem;
+}
+
+.container .display-scores {
+  border: var(--b-main);
+  border-radius: var(--doodly-br);
+  padding: 10px;
+  width: 100%;
+}
+
+.container .recent-scores {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.container .form {
+  display: flex;
+  flex-direction: column;
+}
+
+.container .form label,
+.container .form input {
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.container .form button {
+  width: 40%;
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */
