@@ -18,7 +18,7 @@
 
 ## Live Demo
 
-- [Live Demo Link](https://kingsleyibe.github.io/leaderboard/)
+- [Live Demo Link](https:/kingsleyibe.github.io/leaderboard/)
 
 
 ## Getting Started
@@ -42,11 +42,11 @@ To get a local copy up and running follow these simple example steps.
 
 Clone project, run in your terminal:
 
-```$ git clone https://github.com/KingsleyIbe/to-do-list-app.git ```
+```$ git clone https://github.com/KingsleyIbe/leaderboard.git ```
 
 Open the cloned project in your code editor and run:
 
-``` $ cd to-do-list-app ```
+``` $ cd leaderboard ```
 
  Install npm packages, run:
 
