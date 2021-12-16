@@ -25,5 +25,4 @@ const getUser = async () => {
   const data = await resData.result;
   return data;
 };
-
 export { getUser, postUser };
