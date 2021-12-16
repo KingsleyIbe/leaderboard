@@ -1,24 +1,8 @@
-// const gameId = 'Zl4d7IVkemOTTVg2fUdz';
-// const baseUrl = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/';
-
-// const fetchScores = async () => {
-//   try {
-//     const res = await fetch(
-//       `${baseUrl}games/${gameId}/scores/`,
-//     );
-
-//     console.log(res);
-//     if (!res.ok) throw new Error('Unsuccessful request');
-//     return res.json();
-//   } catch (error) {
-//     return error;
-//   }
-// };
-
-// fetchScores();
+const baseUrl = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/';
+const gameId = 'Zl4d7IVkemOTTVg2fUdz';
 
 const postData = () => {
-  fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/Zl4d7IVkemOTTVg2fUdz/scores/', {
+  fetch(`${baseUrl}games/${gameId}/scores/`, {
     method: 'POST',
     cache: 'no-cache',
     headers: {
@@ -34,7 +18,7 @@ const postData = () => {
 };
 
 const getData = async () => {
-  const response = await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/Zl4d7IVkemOTTVg2fUdz/scores/', {
+  const response = await fetch(`${baseUrl}games/${gameId}/scores/`, {
     method: 'GET'
   })
   const resData = await response.json();

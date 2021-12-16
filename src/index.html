@@ -31,11 +31,12 @@
         </div>
       </div>
     
-      <form action="GET" class="form">
+      <form action="/">
         <label>Add your score</label>
-        <input type="text" placeholder="Your name">
-        <input type="number" placeholder="Your score">
-        <button type="submit">Submit</button>
+        <input type="text" placeholder="Your name" id="user" autocomplete="off">
+        <input type="number" placeholder="Your score" id="score">
+        <p id="error"></p>
+        <button type="submit" id="submit">Submit</button>
       </form>
 </main>
 </div>
