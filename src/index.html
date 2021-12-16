@@ -33,8 +33,8 @@
     
       <form action="/">
         <label>Add your score</label>
-        <input type="text" placeholder="Your name" id="user" autocomplete="off">
-        <input type="number" placeholder="Your score" id="score">
+        <input type="text" placeholder="Your name" id="user" autocomplete="off" required>
+        <input type="number" placeholder="Your score" id="score" required min="0" max="100">
         <p id="error"></p>
         <button type="submit" id="submit">Submit</button>
       </form>
