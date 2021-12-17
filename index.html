@@ -4,7 +4,6 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LeaderBoard Api Project</title>
-    <link rel="stylesheet" href="../src/css/style.css">
   </head>
   <body>
     <div class="container">
@@ -13,25 +12,22 @@
         <div class="inner-scores">
       <div class="recent-scores">
         <p>Recent scores</p>
-        <button type="button">Refresh</button>
+        <button type="button" id="refresh">Refresh</button>
       </div>
         <div class="display-scores">
-          <ul>
-            <li>Name: 100</li>
-            <li>Name: 20</li>
-            <li>Name: 50</li>
-            <li>Name: 78</li>
-            <li>Name: 125</li>
-            <li>Name: 77</li>
-            <li>Name: 42</li>
+          <ul id="scores-list">
+            <li></li>
           </ul>
         </div>
       </div>
-      <form action="submit" class="form">
+      <form action="#" class="form">
         <label>Add your score</label>
-        <input type="text" placeholder="Your name">
-        <input type="number" placeholder="Your score">
-        <button type="submit">Submit</button>
+        <input type="text" placeholder="Your name" id="user" autocomplete="off" required>
+        <input type="number" placeholder="Your score" id="score" required>
+        <p id="error"></p>
+        <div class="btn-container">
+        <button type="submit" id="submit">Submit</button>
+      </div>
       </form>
     </div>
     </div>
