@@ -4,7 +4,6 @@ import { postUser, getUser } from './fetchApi.js';
 const displayTable = document.querySelector('#scores-list');
 
 window.addEventListener('DOMContentLoaded', async () => {
-  setTimeout(() => { displayTable.innerHTML = 'Loading...'; }, 1000);
   const clearInputsFields = () => {
     const userName = document.querySelector('#user');
     const userScore = document.querySelector('#score');
@@ -14,13 +13,16 @@ window.addEventListener('DOMContentLoaded', async () => {
   };
 
   const submitBtn = document.querySelector('#submit');
-  submitBtn.addEventListener('submit', (e) => {
+  submitBtn.addEventListener('click', (e) => {
     const userName = document.querySelector('#user').value;
     const userScore = document.querySelector('#score').value;
 
-    postUser(userName, userScore);
-    clearInputsFields();
     e.preventDefault();
+
+    
+   postUser(userName, userScore);
+    clearInputsFields();
+    
   });
 
   const scoreElement = (name, score) => {
@@ -41,7 +43,6 @@ window.addEventListener('DOMContentLoaded', async () => {
 
   const refreshBtn = document.querySelector('#refresh');
   refreshBtn.addEventListener('click', () => {
-    setTimeout(() => { displayTable.innerHTML = 'Loading...'; }, 1000);
     displayScores();
   });
 });

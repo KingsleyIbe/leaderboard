@@ -1,8 +1,8 @@
 const baseUrl = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/';
-const gameId = 'Zl4d7IVkemOTTVg2fUdz';
+const gameId = 'jy7H24VNgMhDXHdXJ4Sz';
 
-const postUser = (user, score) => {
-  fetch(`${baseUrl}games/${gameId}/scores/`, {
+const postUser = async (user, score) => {
+  await fetch(`${baseUrl}games/${gameId}/scores/`, {
     method: 'POST',
     cache: 'no-cache',
     headers: {
@@ -15,14 +15,10 @@ const postUser = (user, score) => {
 };
 
 const getUser = async () => {
-  // Get scores data
   const response = await fetch(`${baseUrl}games/${gameId}/scores/`);
-
-  // Convert scores/data to Array
   const resData = await response.json();
-
-  // Find data array
   const data = await resData.result;
   return data;
 };
+
 export { getUser, postUser };
