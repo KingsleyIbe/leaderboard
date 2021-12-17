@@ -19,10 +19,8 @@ window.addEventListener('DOMContentLoaded', async () => {
 
     e.preventDefault();
 
-    
-   postUser(userName, userScore);
+    postUser(userName, userScore);
     clearInputsFields();
-    
   });
 
   const scoreElement = (name, score) => {
