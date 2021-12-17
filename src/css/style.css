@@ -68,6 +68,11 @@ li {
   margin-bottom: 10px;
 }
 
+.container .form #score {
+  width: 100%;
+  background-color: #000;
+}
+
 .container .form button {
   width: 40%;
   text-align: center;
