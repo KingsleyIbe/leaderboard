@@ -7,16 +7,20 @@
   box-sizing: border-box;
 }
 
-body {
-  font-size: 16px;
-  font-family: "Patrick Hand SC", cursive;
-}
-
 :root {
   --color-primary: rgb(177, 177, 177);
   --color-secondary: rgba(177, 177, 177, 0.3);
   --doodly-br: 255px 15px 225px 15px/15px 225px 15px 255px;
   --b-main: 5px solid #000;
+  --myFont: "Patrick Hand SC", cursive;
+}
+
+body {
+  font-size: 16px;
+  font-family: var(--myFont);
+  margin-top: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 
 li {
@@ -38,10 +42,16 @@ li {
   gap: 2rem;
 }
 
+.container h1 {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
 .container .inner-container {
   display: flex;
   flex-direction: row;
   gap: 10rem;
+  margin-left: 50px;
 }
 
 .container .display-scores {
@@ -49,12 +59,20 @@ li {
   border-radius: var(--doodly-br);
   padding: 10px;
   width: 100%;
+  margin-top: 20px;
 }
 
 .container .recent-scores {
   display: flex;
   flex-direction: row;
   gap: 2rem;
+}
+
+.container .recent-scores #refresh {
+  padding: 1px 10px 1px 10px;
+  font-weight: bold;
+  font-family: var(--myFont);
+  border-radius: var(--doodly-br);
 }
 
 .container .form {
@@ -66,14 +84,37 @@ li {
 .container .form input {
   padding: 5px;
   margin-bottom: 10px;
+  border-radius: var(--doodly-br);
 }
 
-.container .form #score {
-  width: 100%;
-  background-color: #000;
+.container .form input::-moz-placeholder {
+  font-family: var(--myFont);
+  font-weight: bold;
+  color: #000;
+}
+
+.container .form input:-ms-input-placeholder {
+  font-family: var(--myFont);
+  font-weight: bold;
+  color: #000;
+}
+
+.container .form input::placeholder {
+  font-family: var(--myFont);
+  font-weight: bold;
+  color: #000;
 }
 
 .container .form button {
   width: 40%;
   text-align: center;
+  font-weight: bold;
+  font-family: var(--myFont);
+  border-radius: var(--doodly-br);
+  justify-content: right;
+}
+
+.container .form .btn-container {
+  display: flex;
+  justify-content: end;
 }/*# sourceMappingURL=style.css.map */
