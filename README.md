@@ -18,7 +18,7 @@
 
 ## Live Demo
 
-- [Live Demo Link](https:/kingsleyibe.github.io/leaderboard/)
+- [Live Demo Link](https://kingsleyibe.github.io/leaderboard/dist/index.html)
 
 
 ## Getting Started
