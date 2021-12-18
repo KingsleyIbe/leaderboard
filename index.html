@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+    <title>LeaderBoard Api Project</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="toggle-dark-mode"></div>
+      <h1>Leaderboard</h1>
+      <div class="inner-container">
+        <div class="inner-scores">
+      <div class="recent-scores">
+        <p>Recent scores</p>
+        <button type="button" id="refresh" class="btn">Refresh</button>
+      </div>
+        <div class="display-scores">
+          <p id="loading"></p>
+          <ul id="scores-list">
+            <li></li>
+          </ul>
+        </div>
+      </div>
+      <form action="#" class="form">
+        <label>Add your score</label>
+        <input type="text" placeholder="Your name" id="user" autocomplete="on" required>
+        <input type="number" placeholder="Your score" id="score" autocomplete="on" required>
+        <p id="error"></p>
+        <div class="btn-container">
+        <button type="submit" id="submit" class="btn">Submit</button>
+      </div>
+      </form>
+    </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
