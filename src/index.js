@@ -1,10 +1,12 @@
 import './css/style.css';
 import { postUser, getUser } from './fetchApi.js';
+import toggleTheme from './darkmode.js';
 
 const displayTable = document.querySelector('#scores-list');
 const loading = document.querySelector('#loading');
 
 window.addEventListener('DOMContentLoaded', async () => {
+  toggleTheme();
   loading.innerHTML = 'Loading...';
   setTimeout(() => {
     loading.remove();
