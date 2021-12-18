@@ -144,31 +144,31 @@ li {
   color: #fff;
   cursor: pointer;
 
+  #user,
+  #score {
+    background-color: #000;
+  }
+
+  #user::placeholder {
+    color: #fff;
+  }
+
+  #score::placeholder {
+    color: #fff;
+  }
+
   .container {
     border: var(--b-main-dark);
     border-radius: var(--doodly-br);
-    }
+  }
 
-    .display-scores {
-      border: var(--b-main-dark);
-      border-radius: var(--doodly-br);
-    }
+  .display-scores {
+    border: var(--b-main-dark);
+    border-radius: var(--doodly-br);
+  }
 
-    #user,
-    #score {
-      background-color: #000;
-    }
-
-    #user::placeholder {
-      color: #fff;
-    }
-
-    #score::placeholder {
-      color: #fff;
-    }
-
-    .btn {
-      background-color: #000;
-      color: #fff;
-    }
+  .btn {
+    background-color: #000;
+    color: #fff;
+  }
 }
