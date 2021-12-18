@@ -1,3 +1,4 @@
+/* stylelint-disable no-descending-specificity */
 @import url(https://fonts.googleapis.com/css?family=Patrick+Hand+SC);
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Poppins:wght@200;300&display=swap");
 
@@ -138,6 +139,7 @@ li {
   background-color: #000;
   color: #fff;
 }
+
 .container .form .btn-container {
   display: flex;
   justify-content: end;
@@ -151,16 +153,6 @@ li {
   background-color: #000;
   color: #fff;
   cursor: pointer;
-}
-
-.dark-mode .container {
-  border: var(--b-main-dark);
-  border-radius: var(--doodly-br);
-}
-
-.dark-mode .display-scores {
-  border: var(--b-main-dark);
-  border-radius: var(--doodly-br);
 }
 
 .dark-mode #user,
@@ -190,6 +182,16 @@ li {
 
 .dark-mode #score::placeholder {
   color: #fff;
+}
+
+.dark-mode .container {
+  border: var(--b-main-dark);
+  border-radius: var(--doodly-br);
+}
+
+.dark-mode .display-scores {
+  border: var(--b-main-dark);
+  border-radius: var(--doodly-br);
 }
 
 .dark-mode .btn {
