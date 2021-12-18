@@ -2,8 +2,14 @@ import './css/style.css';
 import { postUser, getUser } from './fetchApi.js';
 
 const displayTable = document.querySelector('#scores-list');
+const loading = document.querySelector('#loading');
 
 window.addEventListener('DOMContentLoaded', async () => {
+  loading.innerHTML = 'Loading...';
+  setTimeout(() => {
+    loading.remove();
+  }, 1000);
+
   const clearInputsFields = () => {
     const userName = document.querySelector('#user');
     const userScore = document.querySelector('#score');
@@ -19,8 +25,16 @@ window.addEventListener('DOMContentLoaded', async () => {
 
     e.preventDefault();
 
-    postUser(userName, userScore);
-    clearInputsFields();
+    if (userName === '' || userScore === '') {
+      const displayError = document.querySelector('#error');
+      displayError.innerHTML = '*All fields must be filled';
+      setTimeout(() => {
+        displayError.remove();
+      }, 5000);
+    } else {
+      postUser(userName, userScore);
+      clearInputsFields();
+    }
   });
 
   const scoreElement = (name, score) => {

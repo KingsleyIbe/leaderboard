@@ -75,6 +75,11 @@ li {
   border-radius: var(--doodly-br);
 }
 
+.container .recent-scores #refresh:hover {
+  background-color: #000;
+  color: #fff;
+}
+
 .container .form {
   display: flex;
   flex-direction: column;
@@ -105,6 +110,14 @@ li {
   color: #000;
 }
 
+.container .form #user:hover {
+  zoom: 1.2;
+}
+
+.container .form #score:hover {
+  zoom: 1.2;
+}
+
 .container .form button {
   width: 40%;
   text-align: center;
@@ -114,7 +127,16 @@ li {
   justify-content: right;
 }
 
+.container .form button:hover {
+  background-color: #000;
+  color: #fff;
+}
+
 .container .form .btn-container {
   display: flex;
   justify-content: end;
+}
+
+.container .form #error {
+  color: #f00;
 }/*# sourceMappingURL=style.css.map */

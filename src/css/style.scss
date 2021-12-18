@@ -75,6 +75,11 @@ li {
       font-family: var(--myFont);
       border-radius: var(--doodly-br);
     }
+
+    #refresh:hover {
+      background-color: #000;
+      color: #fff;
+    }
   }
 
   .form {
@@ -94,6 +99,14 @@ li {
       color: #000;
     }
 
+    #user:hover {
+      zoom: 1.2;
+    }
+
+    #score:hover {
+      zoom: 1.2;
+    }
+
     button {
       width: 40%;
       text-align: center;
@@ -103,9 +116,18 @@ li {
       justify-content: right;
     }
 
+    button:hover {
+      background-color: #000;
+      color: #fff;
+    }
+
     .btn-container {
       display: flex;
       justify-content: end;
+    }
+
+    #error {
+      color: #f00;
     }
   }
 }
